@@ -2,9 +2,9 @@ require("dotenv").config();
 
 import { MongoClient, ServerApiVersion } from "mongodb";
 
-const db = "bloggyDB";
+const db = "";
 
-const uri2 = `mongodb://kristian:${process.env.DB_PASSWORD}@cluster0-shard-00-00.flstk.mongodb.net:27017,cluster0-shard-00-01.flstk.mongodb.net:27017,cluster0-shard-00-02.flstk.mongodb.net:27017/${db}?ssl=true&replicaSet=atlas-f6msjo-shard-0&authSource=admin&retryWrites=true&w=majority`;
+const uri2 = `mongodb://${mongodb_username}:${process.env.mongodb_password}@cluster0-shard-00-00.flstk.mongodb.net:27017,cluster0-shard-00-01.flstk.mongodb.net:27017,cluster0-shard-00-02.flstk.mongodb.net:27017/${process.env.mongodb_dbname}?ssl=true&replicaSet=atlas-f6msjo-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
 // Database Name
 // const dbName = "bloggyDb";

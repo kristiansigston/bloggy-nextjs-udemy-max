@@ -5,7 +5,6 @@ import classes from "./post-item.module.css";
 
 const PostItem = ({ post = [] }) => {
   const { title, image, excerpt, date, slug } = post;
-
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     dat: "numeric",
     month: "long",
@@ -14,7 +13,7 @@ const PostItem = ({ post = [] }) => {
 
   const imagePath = `/images/posts/${slug}/${image}`;
   const linkPath = `/posts/${slug}`;
-
+  console.log("imagepath", imagePath);
   return (
     <li className={classes.post}>
       <Link href={linkPath}>

@@ -17,7 +17,7 @@ const AllPostsPage = ({ posts = [] }) => {
 
 export const getStaticProps = () => {
   const allPosts = getAllPosts();
-
+  console.log("yyyy", allPosts);
   return {
     props: {
       posts: allPosts,

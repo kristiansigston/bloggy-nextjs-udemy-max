@@ -1,7 +1,6 @@
 import classes from "./all-posts.module.css";
 import PostsGrid from "../posts-grid";
 
-
 const AllPosts = ({ posts = [] }) => {
   return (
     <section className={classes.posts}>
